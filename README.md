@@ -19,7 +19,7 @@ The primary user-facing interface showcasing the complete AI verification workfl
 Explore the FastAPI auto-generated documentation with Swagger UI. Test endpoints in real-time and view request/response schemas.
 
 ### 🧪 Streamlit Research Prototype
-> 🤗 **[Streamlit App]** *(Deploy link coming soon)*
+> 🤗 **[Streamlit App]** *https://huggingface.co/spaces/vidushi-agarwal/ai-truth-engine*
 
 A rapid-prototyping interface designed for experimentation and internal demonstration of AI workflows. Ideal for testing and validation.
 
