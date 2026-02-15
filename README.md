@@ -6,6 +6,24 @@ An advanced multi-agent AI-powered fact verification system that analyzes claims
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.129.0-green)
 
+## 🚀 Live Demo
+
+### 🌐 Production Web Application
+> 🔗 **[Frontend Demo]** *(Deploy link coming soon)*
+
+The primary user-facing interface showcasing the complete AI verification workflow with modern UI/UX design.
+
+### ⚙️ Interactive API Documentation
+> 📚 **[API Docs]** *(Deploy link coming soon)*
+
+Explore the FastAPI auto-generated documentation with Swagger UI. Test endpoints in real-time and view request/response schemas.
+
+### 🧪 Streamlit Research Prototype
+> 🤗 **[Streamlit App]** *(Deploy link coming soon)*
+
+A rapid-prototyping interface designed for experimentation and internal demonstration of AI workflows. Ideal for testing and validation.
+
+
 ## ✨ Features
 
 - **🔍 Intelligent Claim Extraction**: Automatically extracts verifiable claims from noisy human text
@@ -38,6 +56,11 @@ The system uses a **multi-agent pipeline** approach:
 - **HTML5/CSS3**: Modern semantic markup and styling
 - **Vanilla JavaScript**: No framework overhead, pure performance
 - **Google Fonts (Inter)**: Clean, professional typography
+
+### Streamlit UI (Alternative Interface)
+- **Streamlit**: Rapid prototyping framework for data apps
+- **Requests**: HTTP library for API communication
+- **Python-dotenv**: Environment configuration
 
 ## 📋 Prerequisites
 
@@ -103,6 +126,25 @@ python -m http.server 3000
 ```
 
 Then navigate to `http://localhost:3000`
+
+### 6. Launch Streamlit App (Optional)
+
+For an alternative Streamlit-based interface:
+
+```bash
+# Navigate to streamlit_app directory
+cd streamlit_app
+
+# Install Streamlit dependencies
+pip install -r requirements.txt
+
+# Run the Streamlit app
+streamlit run app.py
+```
+
+The Streamlit app will be available at `http://localhost:8501`
+
+> 💡 **Tip**: The Streamlit interface provides a cleaner, research-focused UI ideal for demonstrations and rapid testing.
 
 ## 📖 Usage
 
@@ -195,6 +237,9 @@ AI Internet Truth Engine/
 │   ├── styles.css          # Styling and animations
 │   ├── script.js           # Frontend logic
 │   └── README.md           # Frontend documentation
+├── streamlit_app/
+│   ├── app.py              # Streamlit application
+│   └── requirements.txt    # Streamlit dependencies
 ├── requirements.txt        # Root dependencies
 ├── .gitignore             # Git ignore rules
 └── README.md              # This file

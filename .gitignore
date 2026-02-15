@@ -53,6 +53,12 @@ venv.bak/
 .ipynb_checkpoints
 *.ipynb
 
+# Streamlit
+.streamlit/
+.streamlit/secrets.toml
+.streamlit/config.toml
+streamlit_app/.streamlit/
+
 # Testing
 .pytest_cache/
 .coverage
