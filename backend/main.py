@@ -54,7 +54,7 @@ def extract_claim(user_text: str):
     """
 
     response = client.chat.completions.create(
-    model="llama-3.3-70b",
+    model="gpt-oss-120b",
     temperature=0,
     messages=[
         {
@@ -109,7 +109,7 @@ def verify_claim_with_grounding(claim: str) -> dict:
     """
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b",
+        model="gpt-oss-120b",
         temperature=0,
         messages=[
             {"role": "user", "content": verification_prompt}
@@ -163,7 +163,7 @@ def detect_bias(reasoning: str) -> str:
     """
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b",
+        model="gpt-oss-120b",
         temperature=0,
         messages=[{"role": "user", "content": bias_prompt}],
     )
