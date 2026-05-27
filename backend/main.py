@@ -9,9 +9,13 @@ from cerebras.cloud.sdk import Cerebras
 
 load_dotenv()
 
+# Load API key from environment variable
+cerebras_api_key = os.getenv("CEREBRAS_API_KEY")
+if not cerebras_api_key:
+    raise ValueError("CEREBRAS_API_KEY environment variable is not set. Please set it in your .env file.")
 
 client = Cerebras(
-    api_key="csk-kj6ptmjd3jnyk8ehvjpd9r3t36dwphv9xjhwp683dkxew55w",
+    api_key=cerebras_api_key,
 )
 
 app = FastAPI()
